@@ -12,25 +12,26 @@ import java.util.concurrent.atomic.AtomicInteger;
  *
  * @author juan barraza
  */
-class Organization {
+public class OrganizationModel {
+
     private AtomicInteger id;
     private String typeOrganization;
     private Integer numberEmployees;
-    private Representative representative;
-    private List<AccountSaving> accountsSaving;
-    private List<AccountCurrent> accountsCurrent;
+    private RepresentativeModel representative;
+    private List<AccountSavingModel> accountsSaving;
+    private List<AccountCurrentModel> accountsCurrent;
 
-    public Organization( String typeOrganization, Integer numberEmployees, Representative representative) {
+    public OrganizationModel(String typeOrganization, Integer numberEmployees, RepresentativeModel representative) {
         this.typeOrganization = typeOrganization;
         this.numberEmployees = numberEmployees;
         this.representative = representative;
     }
 
-    public Representative getRepresentative() {
+    public RepresentativeModel getRepresentative() {
         return representative;
     }
 
-    public void setRepresentative(Representative representative) {
+    public void setRepresentative(RepresentativeModel representative) {
         this.representative = representative;
     }
 
@@ -50,23 +51,40 @@ class Organization {
         this.numberEmployees = numberEmployees;
     }
 
-    public List<AccountSaving> getAccountsSaving() {
+    public List<AccountSavingModel> getAccountsSaving() {
         return accountsSaving;
     }
 
-    public void setAccountsSaving(AccountSaving accountSaving) {
+    public void setAccountsSaving(AccountSavingModel accountSaving) {
         this.accountsSaving.add(accountSaving);
     }
 
-    public List<AccountCurrent> getAccountsCurrent() {
+    public List<AccountCurrentModel> getAccountsCurrent() {
         return accountsCurrent;
     }
 
-    public void setAccountsCurrent(AccountCurrent accountCurrent) {
+    public void setAccountsCurrent(AccountCurrentModel accountCurrent) {
         this.accountsCurrent.add(accountCurrent);
     }
-    
-    
-    
-    
+
+    public static OrganizationModel index(int ind) {
+        //TODO add code of Create organization
+        return null;
+    }
+
+    public static Boolean delete(int id) {
+        //TODO add code of delete organization 
+        return null;
+    }
+
+    public static OrganizationModel Update(OrganizationModel organization) {
+        //TODO add code of update organization
+        return null;
+    }
+
+    public static OrganizationModel Create(OrganizationModel organization) {
+        //TODO add code of Create organization
+        return null;
+    }
+
 }

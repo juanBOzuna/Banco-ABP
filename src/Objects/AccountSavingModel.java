@@ -9,12 +9,13 @@ package Objects;
  *
  * @author juan barraza
  */
-class AccountSaving {
+public class AccountSavingModel {
+
     private String ccc;
     private Double currentBalance;
     private Double averageBalance;
 
-    public AccountSaving(String ccc, Double currentBalance, Double averageBalance) {
+    public AccountSavingModel(String ccc, Double currentBalance, Double averageBalance) {
         this.ccc = ccc;
         this.currentBalance = currentBalance;
         this.averageBalance = averageBalance;
@@ -43,6 +44,25 @@ class AccountSaving {
     public void setCurrentBalance(Double currentBalance) {
         this.currentBalance = currentBalance;
     }
-    
-    
+
+    public static AccountSavingModel index(int ind) {
+        //TODO add code of Create account
+        return null;
+    }
+
+    public static Boolean delete(int id) {
+        //TODO add code of delete account
+        return null;
+    }
+
+    public static AccountSavingModel Update(AccountSavingModel account) {
+        //TODO add code of update account
+        return null;
+    }
+
+    public static AccountSavingModel Create(AccountSavingModel account) {
+        //TODO add code of Create account
+        return null;
+    }
+
 }

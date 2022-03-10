@@ -11,7 +11,7 @@ import java.util.Calendar;
  *
  * @author juan barraza
  */
-class Representative {
+public class RepresentativeModel {
 
     Integer id;
     String dni;
@@ -19,9 +19,9 @@ class Representative {
     String address;
     Calendar dateOfBirth;
     String sex;
-    Organization organization;
+    OrganizationModel organization;
 
-    public Representative(Integer id, String dni, String name, String address, Calendar dateOfBirth, String sex, Organization organization) {
+    public RepresentativeModel(Integer id, String dni, String name, String address, Calendar dateOfBirth, String sex, OrganizationModel organization) {
         this.id = id;
         this.dni = dni;
         this.name = name;
@@ -71,12 +71,31 @@ class Representative {
         this.sex = sex;
     }
 
-    public Organization getOrganization() {
+    public OrganizationModel getOrganization() {
         return organization;
     }
 
-    public void setOrganization(Organization organization) {
+    public void setOrganization(OrganizationModel organization) {
         this.organization = organization;
     }
 
+    public static RepresentativeModel index(int ind) {
+        //TODO add code of Create representative
+        return null;
+    }
+
+    public static Boolean delete(int id) {
+        //TODO add code of delete representative 
+        return null;
+    }
+
+    public static RepresentativeModel Update(RepresentativeModel representative) {
+        //TODO add code of update representative
+        return null;
+    }
+
+    public static RepresentativeModel Create(RepresentativeModel representative) {
+        //TODO add code of Create representative
+        return null;
+    }
 }
